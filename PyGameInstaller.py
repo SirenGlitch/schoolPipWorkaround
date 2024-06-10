@@ -1,9 +1,10 @@
 import os
 
-base_command = 'py -m pip install \
+base_command = ('py -m pip install \
 --trusted-host pypi.org \
 --trusted-host pypi.python.org \
---trusted-host files.pythonhosted.org '
+--trusted-host files.pythonhosted.org \
+--user ')
 
 package = input("What package would you like to install? (Just press Enter for pygame) ")
 
